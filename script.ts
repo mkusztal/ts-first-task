@@ -11,10 +11,7 @@ function square(a: number): number {
 square(10);
 
 function sum(title: string, ...numbers: number[]): string {
-  let result = `${title} + " = " + ${numbers.reduce(
-    (sum, num) => sum + num,
-    0
-  )}`;
+  let result = `${title} ${numbers.reduce((sum, num) => sum + num, 0)}`;
   return result;
 }
 
